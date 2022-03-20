@@ -1,6 +1,8 @@
 # Bundle Split
 
-This repository contains Python code to fetch bundle content from GG.deals, then price bundle split based on prices at keyshop resellers.
+This repository contains Python code to:
+- fetch bundle content from [GG.deals][ggdeals-landing-page],
+- then price bundle split based on prices at keyshop resellers.
 
 ## Requirements
 
@@ -26,6 +28,7 @@ python list_bundle_content.py
 
 <!-- Definitions -->
 
+[ggdeals-landing-page]: <https://gg.deals/>
 [python-download]: <https://www.python.org/downloads/>
 [grbu-steam-group]: <https://steamcommunity.com/groups/groupbuys/discussions/14/>
 [ggdeals-bundle-page]: <https://gg.deals/bundle/humble-stand-with-ukraine-bundle/>
