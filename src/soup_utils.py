@@ -31,20 +31,20 @@ def extract_metadata_for_given_game(game_soup):
     target_div = "game-info-title-wrapper"
     info_items = extract_soup_items(game_soup, target_div=target_div, verbose=False)
 
-    game_metadata = {
-        "title": info_items[0]["title"],
-        "url": info_items[0]["href"],
-        "slug": info_items[1]["data-game-slug"],
-    }
+    title = info_items[0]["title"]
+    url = info_items[0]["href"]
+    slug = info_items[1]["data-game-slug"]
+
+    game_metadata = {slug: {"title": title, "url": url}}
 
     return game_metadata
 
 
 def extract_metadata_for_all_games(game_items):
-    metadata = []
+    metadata = {}
 
     for game_soup in game_items:
         game_metadata = extract_metadata_for_given_game(game_soup=game_soup)
-        metadata.append(game_metadata)
+        metadata.update(game_metadata)
 
     return metadata
