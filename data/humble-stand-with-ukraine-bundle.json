@@ -1,0 +1,362 @@
+{
+    "112-operator": {
+        "title": "112 Operator",
+        "href": "/game/112-operator/"
+    },
+    "911-operator": {
+        "title": "911 Operator",
+        "href": "/game/911-operator/"
+    },
+    "amnesia-a-machine-for-pigs": {
+        "title": "Amnesia: A Machine for Pigs",
+        "href": "/game/amnesia-a-machine-for-pigs/"
+    },
+    "amnesia-rebirth": {
+        "title": "Amnesia: Rebirth",
+        "href": "/game/amnesia-rebirth/"
+    },
+    "amnesia-the-dark-descent": {
+        "title": "Amnesia: The Dark Descent",
+        "href": "/game/amnesia-the-dark-descent/"
+    },
+    "back-4-blood": {
+        "title": "Back 4 Blood",
+        "href": "/game/back-4-blood/"
+    },
+    "book-of-demons": {
+        "title": "Book of Demons",
+        "href": "/game/book-of-demons/"
+    },
+    "broken-age": {
+        "title": "Broken Age",
+        "href": "/game/broken-age/"
+    },
+    "brothers-a-tale-of-two-sons": {
+        "title": "Brothers - A Tale of Two Sons",
+        "href": "/game/brothers-a-tale-of-two-sons/"
+    },
+    "car-mechanic-simulator-2018": {
+        "title": "Car Mechanic Simulator 2018",
+        "href": "/game/car-mechanic-simulator-2018/"
+    },
+    "corridor-z": {
+        "title": "Corridor Z",
+        "href": "/game/corridor-z/"
+    },
+    "crying-suns": {
+        "title": "Crying Suns",
+        "href": "/game/crying-suns/"
+    },
+    "dagon-the-eldritch-box-dlc": {
+        "title": "Dagon - The Eldritch Box DLC",
+        "href": "/dlc/dagon-the-eldritch-box-dlc/"
+    },
+    "dear-esther-landmark-edition": {
+        "title": "Dear Esther: Landmark Edition",
+        "href": "/game/dear-esther-landmark-edition/"
+    },
+    "draw-slasher": {
+        "title": "Draw Slasher",
+        "href": "/game/draw-slasher/"
+    },
+    "drawful-2": {
+        "title": "Drawful 2",
+        "href": "/game/drawful-2/"
+    },
+    "driftland-the-magic-revival": {
+        "title": "Driftland: The Magic Revival",
+        "href": "/game/driftland-the-magic-revival/"
+    },
+    "earthx": {
+        "title": "EarthX",
+        "href": "/game/earthx/"
+    },
+    "endless-space-2": {
+        "title": "Endless Space 2",
+        "href": "/game/endless-space-2/"
+    },
+    "expeditions-viking": {
+        "title": "Expeditions: Viking",
+        "href": "/game/expeditions-viking/"
+    },
+    "fable-anniversary": {
+        "title": "Fable Anniversary",
+        "href": "/game/fable-anniversary/"
+    },
+    "fury-unleashed": {
+        "title": "Fury Unleashed",
+        "href": "/game/fury-unleashed/"
+    },
+    "gameguru": {
+        "title": "GameGuru",
+        "href": "/application/gameguru/"
+    },
+    "gloria-victis": {
+        "title": "Gloria Victis: Medieval MMORPG",
+        "href": "/game/gloria-victis/"
+    },
+    "go-home-dinosaurs": {
+        "title": "Go Home Dinosaurs!",
+        "href": "/game/go-home-dinosaurs/"
+    },
+    "going-under": {
+        "title": "Going Under",
+        "href": "/game/going-under/"
+    },
+    "hexologic": {
+        "title": "Hexologic",
+        "href": "/game/hexologic/"
+    },
+    "inmost": {
+        "title": "INMOST",
+        "href": "/game/inmost/"
+    },
+    "kerbal-space-program": {
+        "title": "Kerbal Space Program",
+        "href": "/game/kerbal-space-program/"
+    },
+    "kingdom-two-crowns": {
+        "title": "Kingdom: Two Crowns",
+        "href": "/game/kingdom-two-crowns/"
+    },
+    "liberated": {
+        "title": "LIBERATED",
+        "href": "/game/liberated/"
+    },
+    "lust-for-darkness": {
+        "title": "Lust for Darkness",
+        "href": "/game/lust-for-darkness/"
+    },
+    "lust-from-beyond-m-edition": {
+        "title": "Lust from Beyond: M Edition",
+        "href": "/game/lust-from-beyond-m-edition/"
+    },
+    "max-payne-3": {
+        "title": "Max Payne 3",
+        "href": "/game/max-payne-3/"
+    },
+    "metro-exodus": {
+        "title": "Metro Exodus",
+        "href": "/game/metro-exodus/"
+    },
+    "monaco-what-s-yours-is-mine": {
+        "title": "Monaco: What's Yours Is Mine",
+        "href": "/game/monaco-what-s-yours-is-mine/"
+    },
+    "moon-hunters": {
+        "title": "Moon Hunters",
+        "href": "/game/moon-hunters/"
+    },
+    "motor-mechanic": {
+        "title": "Motorcycle Mechanic Simulator 2021",
+        "href": "/game/motor-mechanic/"
+    },
+    "omnom-necropolis": {
+        "title": "NecroWorm",
+        "href": "/game/omnom-necropolis/"
+    },
+    "neverout": {
+        "title": "Neverout",
+        "href": "/game/neverout/"
+    },
+    "nex-machina": {
+        "title": "Nex Machina",
+        "href": "/game/nex-machina/"
+    },
+    "orbital-racer": {
+        "title": "Orbital Racer",
+        "href": "/game/orbital-racer/"
+    },
+    "out-of-reach-treasure-royale": {
+        "title": "Out of Reach: Treasure Royale",
+        "href": "/game/out-of-reach-treasure-royale/"
+    },
+    "pga-tour-2k21": {
+        "title": "PGA TOUR 2K21",
+        "href": "/game/pga-tour-2k21/"
+    },
+    "pathway": {
+        "title": "Pathway",
+        "href": "/game/pathway/"
+    },
+    "pawnbarian": {
+        "title": "Pawnbarian",
+        "href": "/game/pawnbarian/"
+    },
+    "pikuniku": {
+        "title": "Pikuniku",
+        "href": "/game/pikuniku/"
+    },
+    "pixplode": {
+        "title": "Pixplode",
+        "href": "/game/pixplode/"
+    },
+    "popup-dungeon": {
+        "title": "Popup Dungeon",
+        "href": "/game/popup-dungeon/"
+    },
+    "post-void": {
+        "title": "Post Void",
+        "href": "/game/post-void/"
+    },
+    "quantum-break": {
+        "title": "Quantum Break",
+        "href": "/game/quantum-break/"
+    },
+    "rpg-maker-vx": {
+        "title": "RPG Maker VX",
+        "href": "/application/rpg-maker-vx/"
+    },
+    "radio-commander": {
+        "title": "Radio Commander",
+        "href": "/game/radio-commander/"
+    },
+    "ring-of-pain": {
+        "title": "Ring of Pain",
+        "href": "/game/ring-of-pain/"
+    },
+    "roarr": {
+        "title": "Roarr! The Adventures of Rampage Rex",
+        "href": "/game/roarr/"
+    },
+    "rustler": {
+        "title": "Rustler (Grand Theft Horse)",
+        "href": "/game/rustler/"
+    },
+    "superhot": {
+        "title": "SUPERHOT",
+        "href": "/game/superhot/"
+    },
+    "satisfactory": {
+        "title": "Satisfactory",
+        "href": "/game/satisfactory/"
+    },
+    "say-no-more": {
+        "title": "Say No! More",
+        "href": "/game/say-no-more/"
+    },
+    "shing": {
+        "title": "Shing!",
+        "href": "/game/shing/"
+    },
+    "skullgirls": {
+        "title": "Skullgirls 2nd Encore",
+        "href": "/game/skullgirls/"
+    },
+    "slay-the-spire": {
+        "title": "Slay the Spire",
+        "href": "/game/slay-the-spire/"
+    },
+    "slinger-vr": {
+        "title": "Slinger VR",
+        "href": "/game/slinger-vr/"
+    },
+    "soulblight": {
+        "title": "Soulblight",
+        "href": "/game/soulblight/"
+    },
+    "spyro-reignited-trilogy": {
+        "title": "Spyro Reignited Trilogy",
+        "href": "/game/spyro-reignited-trilogy/"
+    },
+    "starbound": {
+        "title": "Starbound",
+        "href": "/game/starbound/"
+    },
+    "sunset-overdrive": {
+        "title": "Sunset Overdrive",
+        "href": "/game/sunset-overdrive/"
+    },
+    "supraland": {
+        "title": "Supraland",
+        "href": "/game/supraland/"
+    },
+    "system-shock-enhanced-edition": {
+        "title": "System Shock: Enhanced Edition",
+        "href": "/game/system-shock-enhanced-edition/"
+    },
+    "telefrag-vr": {
+        "title": "Telefrag VR",
+        "href": "/game/telefrag-vr/"
+    },
+    "the-amazing-american-circus": {
+        "title": "The Amazing American Circus",
+        "href": "/game/the-amazing-american-circus/"
+    },
+    "the-long-dark": {
+        "title": "The Long Dark",
+        "href": "/game/the-long-dark/"
+    },
+    "the-usb-stick-found-in-the-grass": {
+        "title": "The USB Stick Found in the Grass",
+        "href": "/game/the-usb-stick-found-in-the-grass/"
+    },
+    "this-war-of-mine": {
+        "title": "This War of Mine",
+        "href": "/game/this-war-of-mine/"
+    },
+    "toejam-earl-back-in-the-groove": {
+        "title": "ToeJam & Earl: Back in the Groove!",
+        "href": "/game/toejam-earl-back-in-the-groove/"
+    },
+    "tooth-and-tail": {
+        "title": "Tooth and Tail",
+        "href": "/game/tooth-and-tail/"
+    },
+    "treasure-hunter-simulator": {
+        "title": "Treasure Hunter Simulator",
+        "href": "/game/treasure-hunter-simulator/"
+    },
+    "vagante": {
+        "title": "Vagante",
+        "href": "/game/vagante/"
+    },
+    "warsaw": {
+        "title": "WARSAW",
+        "href": "/game/warsaw/"
+    },
+    "wanderlust-travel-stories": {
+        "title": "Wanderlust: Travel Stories",
+        "href": "/game/wanderlust-travel-stories/"
+    },
+    "wandersong": {
+        "title": "Wandersong",
+        "href": "/game/wandersong/"
+    },
+    "wargroove": {
+        "title": "Wargroove",
+        "href": "/game/wargroove/"
+    },
+    "west-of-dead": {
+        "title": "West of Dead",
+        "href": "/game/west-of-dead/"
+    },
+    "wizard-of-legend": {
+        "title": "Wizard of Legend",
+        "href": "/game/wizard-of-legend/"
+    },
+    "x-morph-defense": {
+        "title": "X-Morph: Defense",
+        "href": "/game/x-morph-defense/"
+    },
+    "x-morph-defense-european-assault": {
+        "title": "X-Morph: Defense - European Assault",
+        "href": "/dlc/x-morph-defense-european-assault/"
+    },
+    "x-morph-defense-last-bastion": {
+        "title": "X-Morph: Defense - Last Bastion",
+        "href": "/dlc/x-morph-defense-last-bastion/"
+    },
+    "x-morph-defense-survival-of-the-fittest": {
+        "title": "X-Morph: Defense - Survival Of The Fittest",
+        "href": "/dlc/x-morph-defense-survival-of-the-fittest/"
+    },
+    "yoku-s-island-express": {
+        "title": "Yoku's Island Express",
+        "href": "/game/yoku-s-island-express/"
+    },
+    "dv-rings-of-saturn": {
+        "title": "ΔV: Rings of Saturn",
+        "href": "/game/dv-rings-of-saturn/"
+    }
+}
