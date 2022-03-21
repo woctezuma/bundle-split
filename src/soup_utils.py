@@ -32,10 +32,10 @@ def extract_metadata_for_given_game(game_soup):
     info_items = extract_soup_items(game_soup, target_div=target_div, verbose=False)
 
     title = info_items[0]["title"]
-    url = info_items[0]["href"]
+    href = info_items[0]["href"]
     slug = info_items[1]["data-game-slug"]
 
-    game_metadata = {slug: {"title": title, "url": url}}
+    game_metadata = {slug: {"title": title, "href": href}}
 
     return game_metadata
 
