@@ -18,8 +18,8 @@ def get_bundle_url(bundle_slug):
     return get_domain_url() + get_bundle_endpoint(bundle_slug)
 
 
-def fetch_bundle_page(bundle_url):
-    r = requests.get(bundle_url)
+def fetch_html_page(url):
+    r = requests.get(url)
     r.raise_for_status()
 
     soup = BeautifulSoup(r.content, features="html.parser")
@@ -27,7 +27,7 @@ def fetch_bundle_page(bundle_url):
 
 
 def fetch_bundle_page_with_given_slug(bundle_slug):
-    return fetch_bundle_page(bundle_url=get_bundle_url(bundle_slug))
+    return fetch_html_page(url=get_bundle_url(bundle_slug))
 
 
 def main():
