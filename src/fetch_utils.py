@@ -18,6 +18,10 @@ def get_bundle_url(bundle_slug):
     return get_domain_url() + get_bundle_endpoint(bundle_slug)
 
 
+def get_product_url(product_href):
+    return get_domain_url() + product_href
+
+
 def fetch_html_page(url):
     r = requests.get(url)
     r.raise_for_status()
@@ -28,6 +32,10 @@ def fetch_html_page(url):
 
 def fetch_bundle_page_with_given_slug(bundle_slug):
     return fetch_html_page(url=get_bundle_url(bundle_slug))
+
+
+def fetch_product_page_with_given_href(product_href):
+    return fetch_html_page(url=get_product_url(product_href))
 
 
 def main():
