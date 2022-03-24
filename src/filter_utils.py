@@ -14,15 +14,20 @@ def get_content(elem):
     return filtered_content
 
 
+def safe_strip(elem):
+    try:
+        stripped_elem = elem.strip()
+    except TypeError:
+        stripped_elem = elem
+
+    return stripped_elem
+
+
 def filter_content(data):
     filtered_data = []
 
     for elem in data:
-
-        try:
-            stripped_elem = elem.strip()
-        except TypeError:
-            stripped_elem = elem
+        stripped_elem = safe_strip(elem)
 
         if len(stripped_elem) > 0:
             filtered_data.append(stripped_elem)
