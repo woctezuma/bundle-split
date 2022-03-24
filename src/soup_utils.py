@@ -20,9 +20,13 @@ def extract_soup_items(soup, target_div, verbose=False):
     return items
 
 
-def extract_game_items(page_soup):
+def extract_game_items(page_soup, verbose=True):
     target_div = "game-item-wrapper"
     game_items = extract_soup_items(page_soup, target_div=target_div, verbose=True)
+
+    if verbose:
+        num_games = len(game_items)
+        print(f"Bundle content: {num_games} games.")
 
     return game_items
 
