@@ -7,6 +7,15 @@ def get_class(elem):
     return cl
 
 
+def get_id(elem):
+    try:
+        id = elem["id"]
+    except KeyError:
+        id = ""
+
+    return id
+
+
 def get_content(elem):
     content = elem.contents
     filtered_content = filter_content(content)
