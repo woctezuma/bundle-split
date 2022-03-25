@@ -31,7 +31,8 @@ def round_price(price):
 
 
 def get_bundle_value(ask_prices):
-    return round_price(sum(ask_prices.values()))
+    total = sum(ask_prices.values())
+    return round_price(total)
 
 
 def split_bundle_cost(ask_prices, target_cost, verbose=True):
@@ -45,7 +46,8 @@ def split_bundle_cost(ask_prices, target_cost, verbose=True):
     split_prices = {}
 
     for (slug, ask) in ask_prices.items():
-        split_prices[slug] = round_price(ask * cost_value_ratio)
+        split_price = ask * cost_value_ratio
+        split_prices[slug] = round_price(split_price)
 
     if verbose:
         total = get_bundle_value(split_prices)
