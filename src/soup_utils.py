@@ -1,5 +1,5 @@
 from src.filter_utils import get_class, get_content, get_id, filter_price_items
-from src.parse_utils import get_value_from_soups
+from src.parse_utils import get_value_from_soups, parse_price
 
 
 def extract_soup_items(soup, target_div, verbose=False):
@@ -85,3 +85,26 @@ def extract_price_items(page_soup, verbose=True):
         print(f"#prices = {num_prices}")
 
     return price_items
+
+
+def extract_metadata_for_given_price(price_soup):
+    price_text = price_soup.text
+    price = parse_price(price_text)
+
+    if price is not None:
+        href = price_soup["href"]
+        price_metadata = {href: price}
+    else:
+        price_metadata = {}
+
+    return price_metadata
+
+
+def extract_metadata_for_all_prices(price_items):
+    metadata = {}
+
+    for price_soup in price_items:
+        price_metadata = extract_metadata_for_given_price(price_soup=price_soup)
+        metadata.update(price_metadata)
+
+    return metadata
