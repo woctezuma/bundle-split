@@ -39,7 +39,8 @@ def split_bundle_cost(ask_prices, target_cost, verbose=True):
     cost_value_ratio = target_cost / bundle_value
 
     if verbose:
-        print(f"Bundle value: {get_bundle_value(ask_prices)} {get_currency_symbol()}")
+        total = get_bundle_value(ask_prices)
+        print(f"Bundle value: {total:.2f} {get_currency_symbol()}")
 
     split_prices = {}
 
@@ -47,6 +48,7 @@ def split_bundle_cost(ask_prices, target_cost, verbose=True):
         split_prices[slug] = round_price(ask * cost_value_ratio)
 
     if verbose:
-        print(f"Bundle cost: {get_bundle_value(split_prices)} {get_currency_symbol()}")
+        total = get_bundle_value(split_prices)
+        print(f"Bundle cost: {total:.2f} {get_currency_symbol()}")
 
     return split_prices

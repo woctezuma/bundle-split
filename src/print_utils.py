@@ -24,6 +24,7 @@ def print_prices(bundle_metadata, prices):
         print(f"☐ {title} - {price:.2f} {currency}")
 
     print_line_separator()
-    print(f"Total: {get_bundle_value(prices)} {currency}")
+    total = get_bundle_value(prices)
+    print(f"Total: {total:.2f} {currency}")
 
     return
