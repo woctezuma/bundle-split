@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from src.fetch_utils import fetch_product_page_with_given_href
-from src.soup_utils import extract_price_items, extract_metadata_for_all_prices
+from src.soup_prices import extract_price_items, extract_metadata_for_all_prices
 
 
 class TestSoupUtilsMethods(TestCase):
