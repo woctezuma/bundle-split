@@ -21,6 +21,18 @@ pip install -r requirements.txt
 python list_bundle_content.py 
 ```
 
+- To fetch product prices, run:
+
+```bash
+python list_product_prices.py 
+```
+
+- To split bundle cost, run:
+
+```bash
+python split_bundle_cost.py 
+```
+
 ## References
 
 - Group Buys: [a Steam group][grbu-steam-group] for splitting bundle content,
