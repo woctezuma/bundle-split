@@ -1,0 +1,366 @@
+{
+    "112-operator": {
+        "#official-stores": 20.99,
+        "#keyshops": 0.95
+    },
+    "911-operator": {
+        "#official-stores": 14.99,
+        "#keyshops": 0.49
+    },
+    "amnesia-a-machine-for-pigs": {
+        "#official-stores": 3.69,
+        "#keyshops": 0.67
+    },
+    "amnesia-rebirth": {
+        "#official-stores": 8.49,
+        "#keyshops": 1.6
+    },
+    "amnesia-the-dark-descent": {
+        "#official-stores": 3.69,
+        "#keyshops": 0.67
+    },
+    "back-4-blood": {
+        "#official-stores": 28.79,
+        "#keyshops": 20.28
+    },
+    "book-of-demons": {
+        "#official-stores": 5.49,
+        "#keyshops": 0.5
+    },
+    "broken-age": {
+        "#official-stores": 9.08,
+        "#keyshops": 0.4
+    },
+    "brothers-a-tale-of-two-sons": {
+        "#official-stores": 2.99,
+        "#keyshops": 0.33
+    },
+    "car-mechanic-simulator-2018": {
+        "#official-stores": 19.99,
+        "#keyshops": 2.8
+    },
+    "corridor-z": {
+        "#official-stores": 7.99,
+        "#keyshops": 0.5
+    },
+    "crying-suns": {
+        "#official-stores": 7.39,
+        "#keyshops": 0.44
+    },
+    "dagon-the-eldritch-box-dlc": {
+        "#official-stores": 3.59,
+        "#keyshops": 0.85
+    },
+    "dear-esther-landmark-edition": {
+        "#official-stores": 2,
+        "#keyshops": 0.33
+    },
+    "draw-slasher": {
+        "#official-stores": 1.59,
+        "#keyshops": 0.35
+    },
+    "drawful-2": {
+        "#official-stores": 4.49,
+        "#keyshops": 0.39
+    },
+    "driftland-the-magic-revival": {
+        "#official-stores": 2.59,
+        "#keyshops": 0.37
+    },
+    "earthx": {
+        "#official-stores": 14.69,
+        "#keyshops": 1.09
+    },
+    "endless-space-2": {
+        "#official-stores": 30.89,
+        "#keyshops": 1.7
+    },
+    "expeditions-viking": {
+        "#official-stores": 6.81,
+        "#keyshops": 0.94
+    },
+    "fable-anniversary": {
+        "#official-stores": 31.99,
+        "#keyshops": 4.76
+    },
+    "fury-unleashed": {
+        "#official-stores": 5,
+        "#keyshops": 0.59
+    },
+    "gameguru": {
+        "#official-stores": 9.24,
+        "#keyshops": 0.37
+    },
+    "gloria-victis": {
+        "#official-stores": 19.99,
+        "#keyshops": 1.14
+    },
+    "go-home-dinosaurs": {
+        "#official-stores": 9.99,
+        "#keyshops": 0.37
+    },
+    "going-under": {
+        "#official-stores": 4.19,
+        "#keyshops": 0.71
+    },
+    "hexologic": {
+        "#official-stores": 2.03,
+        "#keyshops": 0.4
+    },
+    "inmost": {
+        "#official-stores": 12.99,
+        "#keyshops": 1.24
+    },
+    "iron-danger": {
+        "#official-stores": 3.63,
+        "#keyshops": 0.33
+    },
+    "kerbal-space-program": {
+        "#official-stores": 8,
+        "#keyshops": 3.46
+    },
+    "kingdom-two-crowns": {
+        "#official-stores": 10,
+        "#keyshops": 2.3
+    },
+    "liberated": {
+        "#official-stores": 3.79,
+        "#keyshops": 0.32
+    },
+    "lust-for-darkness": {
+        "#official-stores": 11.01,
+        "#keyshops": 0.69
+    },
+    "lust-from-beyond-m-edition": {
+        "#official-stores": 13.04,
+        "#keyshops": 1.1
+    },
+    "max-payne-3": {
+        "#official-stores": 16.79,
+        "#keyshops": 1.31
+    },
+    "metro-exodus": {
+        "#official-stores": 10.79,
+        "#keyshops": 6.55
+    },
+    "monaco-what-s-yours-is-mine": {
+        "#official-stores": 13.65,
+        "#keyshops": 0.74
+    },
+    "moon-hunters": {
+        "#official-stores": 1.39,
+        "#keyshops": 0.43
+    },
+    "motor-mechanic": {
+        "#official-stores": 16.79,
+        "#keyshops": 0.81
+    },
+    "omnom-necropolis": {
+        "#official-stores": 3.51,
+        "#keyshops": 0.35
+    },
+    "neverout": {
+        "#official-stores": 3.29,
+        "#keyshops": 0.41
+    },
+    "nex-machina": {
+        "#official-stores": 5.99,
+        "#keyshops": 0.8
+    },
+    "orbital-racer": {
+        "#official-stores": 11.01,
+        "#keyshops": 0.37
+    },
+    "out-of-reach-treasure-royale": {
+        "#official-stores": 10.62,
+        "#keyshops": 0.37
+    },
+    "pga-tour-2k21": {
+        "#official-stores": 12,
+        "#keyshops": 5.41
+    },
+    "pathway": {
+        "#official-stores": 6.99,
+        "#keyshops": 0.54
+    },
+    "pawnbarian": {
+        "#official-stores": 8.19,
+        "#keyshops": 0.4
+    },
+    "pikuniku": {
+        "#official-stores": 2.69,
+        "#keyshops": 0.57
+    },
+    "pixplode": {
+        "#official-stores": 2.99,
+        "#keyshops": 0.41
+    },
+    "popup-dungeon": {
+        "#official-stores": 19.99,
+        "#keyshops": 0.54
+    },
+    "post-void": {
+        "#official-stores": 2.5,
+        "#keyshops": 0.41
+    },
+    "quantum-break": {
+        "#official-stores": 18.16,
+        "#keyshops": 3.94
+    },
+    "rpg-maker-vx": {
+        "#official-stores": 36.39,
+        "#keyshops": 0.41
+    },
+    "radio-commander": {
+        "#official-stores": 14.27,
+        "#keyshops": 0.39
+    },
+    "ring-of-pain": {
+        "#official-stores": 10,
+        "#keyshops": 1.48
+    },
+    "roarr": {
+        "#official-stores": 2.15,
+        "#keyshops": 0.57
+    },
+    "rustler": {
+        "#official-stores": 20.99,
+        "#keyshops": 1.09
+    },
+    "superhot": {
+        "#official-stores": 6.89,
+        "#keyshops": 2.19
+    },
+    "satisfactory": {
+        "#official-stores": 20.99,
+        "#keyshops": 17.45
+    },
+    "say-no-more": {
+        "#official-stores": 14.99,
+        "#keyshops": 0.74
+    },
+    "shing": {
+        "#official-stores": 16.79,
+        "#keyshops": 0.67
+    },
+    "skullgirls": {
+        "#official-stores": 9.99,
+        "#keyshops": 2.86
+    },
+    "slay-the-spire": {
+        "#official-stores": 20.99,
+        "#keyshops": 6.44
+    },
+    "slinger-vr": {
+        "#official-stores": 12.49,
+        "#keyshops": 0.49
+    },
+    "soulblight": {
+        "#official-stores": 11.85,
+        "#keyshops": 0.37
+    },
+    "spyro-reignited-trilogy": {
+        "#official-stores": 36.39,
+        "#keyshops": 8.39
+    },
+    "starbound": {
+        "#official-stores": 8.39,
+        "#keyshops": 4.73
+    },
+    "sunset-overdrive": {
+        "#official-stores": 13.62,
+        "#keyshops": 2.29
+    },
+    "supraland": {
+        "#official-stores": 16.35,
+        "#keyshops": 0.85
+    },
+    "system-shock-enhanced-edition": {
+        "#official-stores": 4.99,
+        "#keyshops": 0.33
+    },
+    "telefrag-vr": {
+        "#official-stores": 11.89,
+        "#keyshops": 0.39
+    },
+    "the-amazing-american-circus": {
+        "#official-stores": 10,
+        "#keyshops": 0.58
+    },
+    "the-long-dark": {
+        "#official-stores": 27.99,
+        "#keyshops": 2.88
+    },
+    "the-usb-stick-found-in-the-grass": {
+        "#official-stores": 8.19,
+        "#keyshops": 0.34
+    },
+    "this-war-of-mine": {
+        "#official-stores": 3.63,
+        "#keyshops": 0.91
+    },
+    "toejam-earl-back-in-the-groove": {
+        "#official-stores": 12.49,
+        "#keyshops": 0.49
+    },
+    "tooth-and-tail": {
+        "#official-stores": 5,
+        "#keyshops": 0.69
+    },
+    "treasure-hunter-simulator": {
+        "#official-stores": 10.28,
+        "#keyshops": 0.83
+    },
+    "vagante": {
+        "#official-stores": 14.99,
+        "#keyshops": 2.35
+    },
+    "warsaw": {
+        "#official-stores": 6.79,
+        "#keyshops": 0.69
+    },
+    "wanderlust-travel-stories": {
+        "#official-stores": 3.24,
+        "#keyshops": 0.33
+    },
+    "wandersong": {
+        "#official-stores": 19.99,
+        "#keyshops": 0.43
+    },
+    "wargroove": {
+        "#official-stores": 15.29,
+        "#keyshops": 1.11
+    },
+    "west-of-dead": {
+        "#official-stores": 7.99,
+        "#keyshops": 0.58
+    },
+    "wizard-of-legend": {
+        "#official-stores": 15.99,
+        "#keyshops": 1.3
+    },
+    "x-morph-defense": {
+        "#official-stores": 5,
+        "#keyshops": 0.58
+    },
+    "x-morph-defense-european-assault": {
+        "#official-stores": 4.99,
+        "#keyshops": 1.19
+    },
+    "x-morph-defense-last-bastion": {
+        "#official-stores": 3.99,
+        "#keyshops": 1.86
+    },
+    "x-morph-defense-survival-of-the-fittest": {
+        "#official-stores": 3.99,
+        "#keyshops": 1.86
+    },
+    "yoku-s-island-express": {
+        "#official-stores": 3.99,
+        "#keyshops": 0.33
+    },
+    "dv-rings-of-saturn": {
+        "#official-stores": 8.19,
+        "#keyshops": 0.5
+    }
+}
