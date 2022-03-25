@@ -1,6 +1,10 @@
+def get_currency_symbol():
+    return "€"
+
+
 def strip_price_text(price_text):
     noisy_symbol = "~"
-    currency_symbol = "€"
+    currency_symbol = get_currency_symbol()
 
     price_text = price_text.strip(noisy_symbol)
     price_text = price_text.split(currency_symbol)[0]
