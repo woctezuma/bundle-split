@@ -25,14 +25,14 @@ def get_ask_prices_for_whole_bundle(price_metadata):
     return ask_prices
 
 
-def round_price(price):
+def round_price_to_the_closest_cent(price):
     num_decimal_digits = 2
     return round(price, num_decimal_digits)
 
 
 def get_bundle_value(ask_prices):
     total = sum(ask_prices.values())
-    return round_price(total)
+    return round_price_to_the_closest_cent(total)
 
 
 def split_bundle_cost(ask_prices, target_cost, verbose=True):
@@ -47,7 +47,7 @@ def split_bundle_cost(ask_prices, target_cost, verbose=True):
 
     for (slug, ask) in ask_prices.items():
         split_price = ask * cost_value_ratio
-        split_prices[slug] = round_price(split_price)
+        split_prices[slug] = round_price_to_the_closest_cent(split_price)
 
     if verbose:
         total = get_bundle_value(split_prices)
