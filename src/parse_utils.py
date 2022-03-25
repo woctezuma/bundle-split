@@ -25,3 +25,20 @@ def parse_price(price_text):
     price_text = strip_price_text(price_text)
     price_text = fix_decimal_convention(price_text)
     return convert_to_float(price_text)
+
+
+def get_value_from_soups(soup_list, key):
+    value = None
+
+    for soup in soup_list:
+        # NB: A soup is not a dictionary: you cannot check `if key in soup`. A possible solution would involve:
+        # - either checking `if soup.has_attr(key)`
+        # - or duck-typing via with try/except.
+
+        try:
+            value = soup[key]
+            break
+        except KeyError:
+            pass
+
+    return value

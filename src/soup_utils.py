@@ -1,4 +1,5 @@
 from src.filter_utils import get_class, get_content, get_id, filter_price_items
+from src.parse_utils import get_value_from_soups
 
 
 def extract_soup_items(soup, target_div, verbose=False):
@@ -38,9 +39,9 @@ def extract_metadata_for_given_game(game_soup):
     target_div = "game-info-title-wrapper"
     info_items = extract_soup_items(game_soup, target_div=target_div, verbose=False)
 
-    title = info_items[0]["title"]
-    href = info_items[0]["href"]
-    slug = info_items[1]["data-game-slug"]
+    title = get_value_from_soups(info_items, "title")
+    href = get_value_from_soups(info_items, "href")
+    slug = get_value_from_soups(info_items, "data-game-slug")
 
     game_metadata = {slug: {"title": title, "href": href}}
 
