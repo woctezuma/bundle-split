@@ -19,7 +19,7 @@ def main():
         price_metadata[slug] = extract_metadata_for_all_prices(price_items=price_items)
 
     print(price_metadata)
-    save_prices_to_disk(data=price_metadata)
+    save_prices_to_disk(data=price_metadata, bundle_slug=bundle_slug)
 
     return True
 

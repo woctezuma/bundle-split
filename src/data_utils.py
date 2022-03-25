@@ -19,5 +19,5 @@ def get_bundle_fname(bundle_slug):
     return get_file_path(base_fname=bundle_slug)
 
 
-def get_price_fname():
-    return get_file_path(base_fname="prices")
+def get_price_fname(bundle_slug):
+    return get_file_path(base_fname=f"prices_{bundle_slug}")

@@ -33,17 +33,17 @@ def save_bundle_to_disk(data, bundle_slug):
     return
 
 
-def load_prices_from_disk():
-    fname = get_price_fname()
+def load_prices_from_disk(bundle_slug):
+    fname = get_price_fname(bundle_slug)
     return load_json(fname)
 
 
-def save_prices_to_disk(data):
-    fname = get_price_fname()
+def save_prices_to_disk(data, bundle_slug):
+    fname = get_price_fname(bundle_slug)
 
     # Update previous data
     # Reference: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
-    updated_data = load_prices_from_disk()
+    updated_data = load_prices_from_disk(bundle_slug)
     updated_data |= data
 
     save_json(updated_data, fname)
