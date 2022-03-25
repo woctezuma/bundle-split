@@ -15,19 +15,19 @@ pip install -r requirements.txt
 
 ## Usage
 
-- To fetch bundle content, run:
+1) To fetch bundle content, run:
 
 ```bash
 python list_bundle_content.py 
 ```
 
-- To fetch product prices, run:
+2) To fetch product prices, run:
 
 ```bash
 python list_product_prices.py 
 ```
 
-- To split bundle cost, run:
+3) To split bundle cost, run:
 
 ```bash
 python split_bundle_cost.py 
