@@ -30,6 +30,10 @@ def round_price_to_the_closest_cent(price):
     return round(price, num_decimal_digits)
 
 
+def round_price_to_multiple_of_delta(price, delta=0.05):
+    return delta * round(price / delta)
+
+
 def get_bundle_value(ask_prices):
     total = sum(ask_prices.values())
     return round_price_to_the_closest_cent(total)
@@ -47,7 +51,7 @@ def split_bundle_cost(ask_prices, target_cost, verbose=True):
 
     for (slug, ask) in ask_prices.items():
         split_price = ask * cost_value_ratio
-        split_prices[slug] = round_price_to_the_closest_cent(split_price)
+        split_prices[slug] = round_price_to_multiple_of_delta(split_price)
 
     if verbose:
         total = get_bundle_value(split_prices)
