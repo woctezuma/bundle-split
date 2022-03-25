@@ -42,3 +42,8 @@ def filter_content(data):
             filtered_data.append(stripped_elem)
 
     return filtered_data
+
+
+def filter_price_items(price_items):
+    target_class = "game-price-anchor-link"
+    return [elem for elem in price_items if target_class in get_class(elem)]

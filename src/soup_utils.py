@@ -1,4 +1,4 @@
-from src.filter_utils import get_class, get_content, get_id
+from src.filter_utils import get_class, get_content, get_id, filter_price_items
 
 
 def extract_soup_items(soup, target_div, verbose=False):
@@ -72,11 +72,6 @@ def extract_price_items_from_header(price_header):
         price_items += extract_soup_items(soup, target_div=target_div, verbose=False)
 
     return price_items
-
-
-def filter_price_items(price_items):
-    target_class = "game-price-anchor-link"
-    return [elem for elem in price_items if target_class in get_class(elem)]
 
 
 def extract_price_items(page_soup, verbose=True):
