@@ -37,7 +37,7 @@ def get_value_from_soups(soup_list, key):
     for soup in soup_list:
         # NB: A soup is not a dictionary: you cannot check `if key in soup`. A possible solution would involve:
         # - either checking `if soup.has_attr(key)`
-        # - or duck-typing via with try/except.
+        # - or duck-typing via try/except.
 
         try:
             value = soup[key]
