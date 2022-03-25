@@ -75,7 +75,7 @@ def extract_price_items_from_header(price_header):
     return price_items
 
 
-def extract_price_items(page_soup, verbose=True):
+def extract_price_items(page_soup, verbose=False):
     price_header = extract_price_header(page_soup)
     price_items = extract_price_items_from_header(price_header)
     price_items = filter_price_items(price_items)
