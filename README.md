@@ -1,5 +1,9 @@
 # Bundle Split
 
+[![Build status with Github Action][build-image-action]][build-action]
+[![Code coverage][codecov-image]][codecov]
+[![Code Quality][codacy-image]][codacy]
+
 This repository contains Python code to:
 - fetch bundle content from [GG.deals][ggdeals-landing-page],
 - then price bundle split based on prices at keyshop resellers.
@@ -39,6 +43,15 @@ python split_bundle_cost.py
 - GG.deals: [the web page][ggdeals-bundle-page] for "Humble Stand with Ukraine Bundle".
 
 <!-- Definitions -->
+
+[build-action]: <https://github.com/woctezuma/bundle-split/actions>
+[build-image-action]: <https://github.com/woctezuma/bundle-split/workflows/Python application/badge.svg?branch=main>
+
+[codecov]: <https://codecov.io/gh/woctezuma/bundle-split>
+[codecov-image]: <https://codecov.io/gh/woctezuma/bundle-split/branch/main/graph/badge.svg>
+
+[codacy]: <https://www.codacy.com/gh/woctezuma/bundle-split>
+[codacy-image]: <https://api.codacy.com/project/badge/Grade/6f681c0f05e94799a83c68105fce8558>
 
 [ggdeals-landing-page]: <https://gg.deals/>
 [python-download]: <https://www.python.org/downloads/>
