@@ -37,6 +37,12 @@ python list_product_prices.py
 python split_bundle_cost.py 
 ```
 
+Alternatively, to execute the complete workflow, run:
+
+```bash
+python run_workflow.py 
+```
+
 ## References
 
 - Group Buys: [a Steam group][grbu-steam-group] for splitting bundle content,
