@@ -3,8 +3,7 @@ from src.fetch_utils import fetch_product_page_with_given_href
 from src.soup_prices import extract_price_items, extract_metadata_for_all_prices
 
 
-def main():
-    bundle_slug = "humble-stand-with-ukraine-bundle"
+def main(bundle_slug):
     bundle_metadata = load_bundle_from_disk(bundle_slug)
 
     price_metadata = {}
@@ -25,4 +24,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    bundle_slug = "humble-stand-with-ukraine-bundle"
+    main(bundle_slug)

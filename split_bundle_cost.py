@@ -3,10 +3,7 @@ from src.print_utils import print_prices
 from src.split_utils import get_ask_prices_for_whole_bundle, split_bundle_cost
 
 
-def main():
-    bundle_slug = "humble-stand-with-ukraine-bundle"
-    target_cost_in_euros = 36.39
-
+def main(bundle_slug, target_cost_in_euros):
     price_metadata = load_prices_from_disk(bundle_slug)
 
     ask_prices = get_ask_prices_for_whole_bundle(price_metadata)
@@ -19,4 +16,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    bundle_slug = "humble-stand-with-ukraine-bundle"
+    target_cost_in_euros = 36.39
+    main(bundle_slug, target_cost_in_euros)
