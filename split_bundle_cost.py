@@ -1,5 +1,5 @@
 from src.disk_utils import load_prices_from_disk, load_bundle_from_disk
-from src.print_utils import print_prices
+from src.print_utils import print_prices, export_ask_prices_for_spreadsheet
 from src.split_utils import get_ask_prices_for_whole_bundle, split_bundle_cost
 
 
@@ -10,6 +10,7 @@ def main(bundle_slug, target_cost_in_euros):
     split_prices = split_bundle_cost(ask_prices, target_cost_in_euros)
 
     bundle_metadata = load_bundle_from_disk(bundle_slug)
+    export_ask_prices_for_spreadsheet(bundle_metadata, prices=ask_prices)
     print_prices(bundle_metadata, split_prices)
 
     return True
