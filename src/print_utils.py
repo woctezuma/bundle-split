@@ -35,7 +35,7 @@ def convert_price_for_spreadhseet(price):
     return price_str.replace(".", ",")
 
 
-def export_prices_for_spreadsheet(bundle_metadata, ask_prices):
+def export_ask_prices_for_spreadsheet(bundle_metadata, ask_prices):
     cell_separator = "\t"
     currency = get_currency_symbol()
 
