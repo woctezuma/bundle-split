@@ -30,7 +30,7 @@ def print_prices(bundle_metadata, prices):
     return
 
 
-def convert_price_for_spreadhseet(price):
+def convert_price_for_spreadsheet(price):
     price_str = f"{price:.2f}"
     return price_str.replace(".", ",")
 
@@ -46,7 +46,7 @@ def export_ask_prices_for_spreadsheet(bundle_metadata, ask_prices):
         title = bundle_metadata[slug]["title"]
         price = ask_prices[slug]
 
-        price_str = convert_price_for_spreadhseet(price)
+        price_str = convert_price_for_spreadsheet(price)
         print(f"{title}{cell_separator}{price_str}")
 
     print_line_separator()
