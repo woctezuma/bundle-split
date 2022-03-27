@@ -35,22 +35,22 @@ def convert_price_for_spreadsheet(price):
     return price_str.replace(".", ",")
 
 
-def export_ask_prices_for_spreadsheet(bundle_metadata, ask_prices):
+def export_ask_prices_for_spreadsheet(bundle_metadata, prices):
     cell_separator = "\t"
     currency = get_currency_symbol()
 
     print(f"\nGame name{cell_separator}Reseller price")
     print_line_separator()
 
-    for slug in sorted(ask_prices, key=lambda x: ask_prices[x], reverse=True):
+    for slug in sorted(prices, key=lambda x: prices[x], reverse=True):
         title = bundle_metadata[slug]["title"]
-        price = ask_prices[slug]
+        price = prices[slug]
 
         price_str = convert_price_for_spreadsheet(price)
         print(f"{title}{cell_separator}{price_str}")
 
     print_line_separator()
-    total = get_bundle_value(ask_prices)
+    total = get_bundle_value(prices)
     print(f"Total: {total:.2f} {currency}")
 
     return
