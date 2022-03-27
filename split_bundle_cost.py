@@ -11,7 +11,7 @@ def main(bundle_slug, target_cost_in_euros):
 
     bundle_metadata = load_bundle_from_disk(bundle_slug)
     export_ask_prices_for_spreadsheet(bundle_metadata, prices=ask_prices)
-    print_prices(bundle_metadata, split_prices)
+    print_prices(bundle_metadata, prices=split_prices)
 
     return True
 
