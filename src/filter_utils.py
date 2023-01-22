@@ -9,11 +9,11 @@ def get_class(elem):
 
 def get_id(elem):
     try:
-        id = elem["id"]
+        elem_id = elem["id"]
     except KeyError:
-        id = ""
+        elem_id = ""
 
-    return id
+    return elem_id
 
 
 def get_content(elem):
