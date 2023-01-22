@@ -1,6 +1,6 @@
 from src.disk_utils import load_bundle_from_disk, save_prices_to_disk
 from src.fetch_utils import fetch_product_page_with_given_href
-from src.soup_prices import extract_price_items, extract_metadata_for_all_prices
+from src.soup_prices import extract_metadata_for_all_prices, extract_price_items
 
 
 def main(bundle_slug):
