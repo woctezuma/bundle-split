@@ -3,8 +3,9 @@ from src.fetch_utils import fetch_bundle_page_with_given_slug
 from src.soup_tiers import extract_prices_for_all_tiers, extract_tier_items
 
 
-def main(bundle_slug):
-    page_soup = fetch_bundle_page_with_given_slug(bundle_slug)
+def main(bundle_slug, page_soup=None):
+    if page_soup is None:
+        page_soup = fetch_bundle_page_with_given_slug(bundle_slug)
 
     tier_items = extract_tier_items(page_soup=page_soup)
     tier_prices = extract_prices_for_all_tiers(tier_items=tier_items)

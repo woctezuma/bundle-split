@@ -3,8 +3,9 @@ from src.fetch_utils import fetch_bundle_page_with_given_slug
 from src.soup_games import extract_game_items, extract_metadata_for_all_games
 
 
-def main(bundle_slug):
-    page_soup = fetch_bundle_page_with_given_slug(bundle_slug)
+def main(bundle_slug, page_soup=None):
+    if page_soup is None:
+        page_soup = fetch_bundle_page_with_given_slug(bundle_slug)
 
     game_items = extract_game_items(page_soup=page_soup)
     metadata = extract_metadata_for_all_games(game_items=game_items)
