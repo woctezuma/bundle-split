@@ -19,6 +19,12 @@ def compute_target_cost(tier_prices):
     return max(tier_prices)
 
 
+def fetch_target_cost(bundle_slug, page_soup=None):
+    tier_prices = fetch_tiers(bundle_slug, page_soup=page_soup)
+
+    return compute_target_cost(tier_prices)
+
+
 def load_target_cost(bundle_slug, page_soup=None):
     try:
         tier_prices = load_tiers_from_disk(bundle_slug)
