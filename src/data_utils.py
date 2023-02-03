@@ -21,3 +21,7 @@ def get_bundle_fname(bundle_slug):
 
 def get_price_fname(bundle_slug):
     return get_file_path(base_fname=f"prices_{bundle_slug}")
+
+
+def get_tier_fname(bundle_slug):
+    return get_file_path(base_fname=f"tiers_{bundle_slug}")

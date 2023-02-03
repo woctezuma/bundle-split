@@ -1,6 +1,6 @@
 import json
 
-from src.data_utils import get_bundle_fname, get_price_fname
+from src.data_utils import get_bundle_fname, get_price_fname, get_tier_fname
 
 
 def save_json(data, fname):
@@ -47,5 +47,19 @@ def save_prices_to_disk(data, bundle_slug):
     updated_data |= data
 
     save_json(updated_data, fname)
+
+    return
+
+
+def load_tiers_from_disk(bundle_slug):
+    fname = get_tier_fname(bundle_slug)
+    return load_json(fname)
+
+
+def save_tiers_to_disk(data, bundle_slug):
+    fname = get_tier_fname(bundle_slug)
+
+    # Overwrite previous data
+    save_json(data, fname)
 
     return
