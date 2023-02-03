@@ -1,5 +1,5 @@
 from src.filter_utils import filter_price_items
-from src.parse_utils import parse_price
+from src.parse_utils import parse_price_from_soup
 from src.soup_utils import extract_soup_items
 
 
@@ -33,8 +33,7 @@ def extract_price_items(page_soup, verbose=False):
 
 
 def extract_metadata_for_given_price(price_soup):
-    price_text = price_soup.text
-    price = parse_price(price_text)
+    price = parse_price_from_soup(price_soup)
 
     if price is not None:
         href = price_soup["href"]

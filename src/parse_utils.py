@@ -31,6 +31,11 @@ def parse_price(price_text):
     return convert_to_float(price_text)
 
 
+def parse_price_from_soup(price_soup):
+    price_text = price_soup.text
+    return parse_price(price_text)
+
+
 def get_value_from_soups(soup_list, key):
     value = None
 
