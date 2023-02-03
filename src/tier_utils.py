@@ -25,10 +25,10 @@ def fetch_target_cost(bundle_slug, page_soup=None):
     return compute_target_cost(tier_prices)
 
 
-def load_target_cost(bundle_slug, page_soup=None):
+def load_target_cost(bundle_slug):
     try:
         tier_prices = load_tiers_from_disk(bundle_slug)
     except FileNotFoundError:
-        tier_prices = fetch_tiers(bundle_slug, page_soup=page_soup)
+        tier_prices = fetch_tiers(bundle_slug)
 
     return compute_target_cost(tier_prices)
