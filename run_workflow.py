@@ -20,5 +20,4 @@ def main(bundle_slug, target_cost_in_euros=None):
 
 if __name__ == "__main__":
     bundle_slug = "humble-choice-march-2022"
-    target_cost_in_euros = 9.99
-    main(bundle_slug, target_cost_in_euros)
+    main(bundle_slug)
