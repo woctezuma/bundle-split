@@ -1,3 +1,5 @@
+import argparse
+
 import list_bundle_content
 import list_product_prices
 import split_bundle_cost
@@ -19,5 +21,23 @@ def main(bundle_slug, target_cost_in_euros=None):
 
 
 if __name__ == "__main__":
-    bundle_slug = "humble-choice-march-2022"
-    main(bundle_slug)
+    parser = argparse.ArgumentParser(
+        description="Compute fair prices for a bundle split, based on prices observed at gray-market key resellers.",
+    )
+    parser.add_argument(
+        "--bundle",
+        dest="bundle_slug",
+        type=str,
+        default="humble-choice-march-2022",
+        help="Bundle slug at gg.deals",
+    )
+    parser.add_argument(
+        "--cost",
+        dest="target_cost_in_euros",
+        type=float,
+        default=None,
+        help="Target cost of the bundle, e.g. the retail price of the bundle, or the cost of the highest tier.",
+    )
+    args = parser.parse_args()
+
+    main(args.bundle_slug, args.target_cost_in_euros)
