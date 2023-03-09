@@ -5,9 +5,12 @@ import list_product_prices
 import split_bundle_cost
 from src.fetch_utils import fetch_bundle_page_with_given_slug
 from src.tier_utils import fetch_target_cost
+from src.trim_utils import standardize_bundle_slug
 
 
 def main(bundle_slug, target_cost_in_euros=None):
+    bundle_slug = standardize_bundle_slug(bundle_slug)
+
     page_soup = fetch_bundle_page_with_given_slug(bundle_slug)
 
     if target_cost_in_euros is None:
