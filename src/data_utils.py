@@ -1,5 +1,7 @@
 import pathlib
 
+from src.trim_utils import strip_noisy_character
+
 
 def get_data_folder():
     data_folder = "data/"
@@ -12,6 +14,7 @@ def get_json_file_extension():
 
 
 def get_file_path(base_fname):
+    base_fname = strip_noisy_character(base_fname)
     return get_data_folder() + base_fname + get_json_file_extension()
 
 
