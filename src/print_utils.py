@@ -8,8 +8,6 @@ def print_line_separator():
 
     print(sep * num_sep)
 
-    return
-
 
 def print_prices(bundle_metadata, prices):
     currency = get_currency_symbol()
@@ -26,8 +24,6 @@ def print_prices(bundle_metadata, prices):
     print_line_separator()
     total = get_bundle_value(prices)
     print(f"Total: {total:.2f} {currency}")
-
-    return
 
 
 def convert_price_for_spreadsheet(price):
@@ -52,5 +48,3 @@ def export_ask_prices_for_spreadsheet(bundle_metadata, prices):
     print_line_separator()
     total = get_bundle_value(prices)
     print(f"Total: {total:.2f} {currency}")
-
-    return
