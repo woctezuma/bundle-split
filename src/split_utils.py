@@ -19,7 +19,7 @@ def get_ask_price_for_single_product(product_metadata):
 def get_ask_prices_for_whole_bundle(price_metadata):
     ask_prices = {}
 
-    for (slug, product_metadata) in price_metadata.items():
+    for slug, product_metadata in price_metadata.items():
         ask_prices[slug] = get_ask_price_for_single_product(product_metadata)
 
     return ask_prices
@@ -49,7 +49,7 @@ def split_bundle_cost(ask_prices, target_cost, verbose=True):
 
     split_prices = {}
 
-    for (slug, ask) in ask_prices.items():
+    for slug, ask in ask_prices.items():
         split_price = ask * cost_value_ratio
         split_prices[slug] = round_price_to_multiple_of_delta(split_price)
 
