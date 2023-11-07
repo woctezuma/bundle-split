@@ -1,17 +1,18 @@
 import json
+from pathlib import Path
 
 from src.data_utils import get_bundle_fname, get_price_fname, get_tier_fname
 
 
 def save_json(data, fname):
-    with open(fname, "w", encoding="utf-8") as f:
+    with Path(fname).open("w", encoding="utf-8") as f:
         json.dump(data, f)
     return
 
 
 def load_json(fname):
     try:
-        with open(fname, encoding="utf-8") as f:
+        with Path(fname).open(encoding="utf-8") as f:
             data = json.load(f)
     except FileNotFoundError:
         data = {}
