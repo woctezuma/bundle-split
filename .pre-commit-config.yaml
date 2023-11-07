@@ -1,0 +1,9 @@
+files: \.(py)$
+repos:
+
+-   repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.1.4
+    hooks:
+    - id: ruff-format
+    - id: ruff
+      args: [--target-version, "py312", --fix, --show-fixes, --exit-non-zero-on-fix, --select, "ALL", --ignore, "ANN,D,E501,F841,FBT,INP,RET504,S101,S113,T20"]
