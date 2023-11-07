@@ -1,3 +1,6 @@
+from contextlib import suppress
+
+
 def get_currency_symbol():
     return "€"
 
@@ -44,10 +47,8 @@ def get_value_from_soups(soup_list, key):
         # - either checking `if soup.has_attr(key)`
         # - or duck-typing via try/except.
 
-        try:
+        with suppress(KeyError):
             value = soup[key]
             break
-        except KeyError:
-            pass
 
     return value
