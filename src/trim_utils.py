@@ -7,7 +7,7 @@ def strip_noisy_character(base_fname: str) -> str:
 
 
 def get_non_empty_tokens(tokens: list[str]) -> list[str]:
-    return [t for t in tokens if len(t) > 0]
+    return [t for t in tokens if t]
 
 
 def standardize_bundle_slug(slug_or_url: str) -> str:

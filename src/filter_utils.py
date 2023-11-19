@@ -36,7 +36,7 @@ def filter_content(data: list[str]) -> list[str]:
     for elem in data:
         stripped_elem = safe_strip(elem)
 
-        if len(stripped_elem) > 0:
+        if stripped_elem:
             filtered_data.append(stripped_elem)
 
     return filtered_data
