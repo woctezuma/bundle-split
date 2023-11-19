@@ -5,9 +5,7 @@ from src.soup_utils import extract_soup_items
 
 def extract_price_header(page_soup):
     target_div = "game-header-current-prices"
-    price_header = extract_soup_items(page_soup, target_div=target_div, verbose=False)
-
-    return price_header
+    return extract_soup_items(page_soup, target_div=target_div, verbose=False)
 
 
 def extract_price_items_from_header(price_header):

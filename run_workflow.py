@@ -8,7 +8,7 @@ from src.tier_utils import fetch_target_cost
 from src.trim_utils import standardize_bundle_slug
 
 
-def main(bundle_slug, target_cost_in_euros=None):
+def main(bundle_slug, target_cost_in_euros=None) -> bool:
     bundle_slug = standardize_bundle_slug(bundle_slug)
 
     page_soup = fetch_bundle_page_with_given_slug(bundle_slug)

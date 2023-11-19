@@ -1,7 +1,7 @@
 from contextlib import suppress
 
 
-def get_currency_symbol():
+def get_currency_symbol() -> str:
     return "€"
 
 
@@ -10,9 +10,7 @@ def strip_price_text(price_text):
     currency_symbol = get_currency_symbol()
 
     price_text = price_text.strip(noisy_symbol)
-    price_text = price_text.split(currency_symbol)[0]
-
-    return price_text
+    return price_text.split(currency_symbol)[0]
 
 
 def fix_decimal_convention(price_text):

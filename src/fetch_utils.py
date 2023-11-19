@@ -2,11 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def get_domain_url():
+def get_domain_url() -> str:
     return "https://gg.deals"
 
 
-def get_news_endpoint(news_category, news_item_slug):
+def get_news_endpoint(news_category, news_item_slug) -> str:
     return f"/{news_category}/{news_item_slug}"
 
 
@@ -26,8 +26,7 @@ def fetch_html_page(url):
     r = requests.get(url)
     r.raise_for_status()
 
-    soup = BeautifulSoup(r.content, features="html.parser")
-    return soup
+    return BeautifulSoup(r.content, features="html.parser")
 
 
 def fetch_bundle_page_with_given_slug(bundle_slug):
@@ -38,9 +37,9 @@ def fetch_product_page_with_given_href(product_href):
     return fetch_html_page(url=get_product_url(product_href))
 
 
-def main():
+def main() -> bool:
     bundle_slug = "humble-stand-with-ukraine-bundle"
-    page_soup = fetch_bundle_page_with_given_slug(bundle_slug)
+    fetch_bundle_page_with_given_slug(bundle_slug)
     return True
 
 

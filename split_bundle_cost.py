@@ -3,7 +3,7 @@ from src.print_utils import export_ask_prices_for_spreadsheet, print_prices
 from src.split_utils import get_ask_prices_for_whole_bundle, split_bundle_cost
 
 
-def main(bundle_slug, target_cost_in_euros):
+def main(bundle_slug, target_cost_in_euros) -> bool:
     price_metadata = load_prices_from_disk(bundle_slug)
 
     ask_prices = get_ask_prices_for_whole_bundle(price_metadata)

@@ -9,7 +9,7 @@ def get_data_folder():
     return data_folder
 
 
-def get_json_file_extension():
+def get_json_file_extension() -> str:
     return ".json"
 
 

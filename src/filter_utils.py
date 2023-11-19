@@ -18,9 +18,7 @@ def get_id(elem):
 
 def get_content(elem):
     content = elem.contents
-    filtered_content = filter_content(content)
-
-    return filtered_content
+    return filter_content(content)
 
 
 def safe_strip(elem):

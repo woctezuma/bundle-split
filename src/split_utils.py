@@ -1,7 +1,7 @@
 from src.parse_utils import get_currency_symbol
 
 
-def get_keyshop_label():
+def get_keyshop_label() -> str:
     return "#keyshops"
 
 

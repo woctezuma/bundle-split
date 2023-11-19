@@ -12,5 +12,4 @@ def get_non_empty_tokens(tokens):
 
 def standardize_bundle_slug(slug_or_url):
     tokens = slug_or_url.split(URL_SEPARATOR)
-    bundle_slug = get_non_empty_tokens(tokens)[-1]
-    return bundle_slug
+    return get_non_empty_tokens(tokens)[-1]

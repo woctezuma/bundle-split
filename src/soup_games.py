@@ -21,9 +21,7 @@ def extract_metadata_for_given_game(game_soup):
     href = get_value_from_soups(info_items, "href")
     slug = get_value_from_soups(info_items, "data-game-slug")
 
-    game_metadata = {slug: {"title": title, "href": href}}
-
-    return game_metadata
+    return {slug: {"title": title, "href": href}}
 
 
 def extract_metadata_for_all_games(game_items):
