@@ -14,4 +14,4 @@ class TestSoupUtilsMethods(TestCase):
         price_items = extract_price_items(page_soup=page_soup)
         metadata = extract_metadata_for_all_prices(price_items=price_items)
 
-        assert metadata == {}
+        assert not metadata
