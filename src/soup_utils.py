@@ -1,7 +1,11 @@
 from src.filter_utils import get_class, get_content, get_id
 
 
-def extract_soup_items(soup, target_div, verbose=False):
+def extract_soup_items(
+    soup,
+    target_div: str,
+    verbose: bool = False,
+) -> list[str]:
     all_divs = soup.findAll("div")
 
     items = []

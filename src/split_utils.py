@@ -5,7 +5,7 @@ def get_keyshop_label() -> str:
     return "#keyshops"
 
 
-def get_ask_price_for_single_product(product_metadata):
+def get_ask_price_for_single_product(product_metadata: dict[str, float]) -> float:
     keyshop_label = get_keyshop_label()
 
     try:
@@ -16,7 +16,9 @@ def get_ask_price_for_single_product(product_metadata):
     return ask_price
 
 
-def get_ask_prices_for_whole_bundle(price_metadata):
+def get_ask_prices_for_whole_bundle(
+    price_metadata: dict[str, dict[str, float]],
+) -> dict[str, float]:
     ask_prices = {}
 
     for slug, product_metadata in price_metadata.items():
@@ -25,21 +27,25 @@ def get_ask_prices_for_whole_bundle(price_metadata):
     return ask_prices
 
 
-def round_price_to_the_closest_cent(price):
+def round_price_to_the_closest_cent(price: float) -> float:
     num_decimal_digits = 2
     return round(price, num_decimal_digits)
 
 
-def round_price_to_multiple_of_delta(price, delta=0.05):
+def round_price_to_multiple_of_delta(price: float, delta: float = 0.05) -> float:
     return delta * round(price / delta)
 
 
-def get_bundle_value(ask_prices):
+def get_bundle_value(ask_prices: dict[str, float]) -> float:
     total = sum(ask_prices.values())
     return round_price_to_the_closest_cent(total)
 
 
-def split_bundle_cost(ask_prices, target_cost, verbose=True):
+def split_bundle_cost(
+    ask_prices: dict[str, float],
+    target_cost: float,
+    verbose: bool = True,
+) -> dict[str, float]:
     bundle_value = get_bundle_value(ask_prices)
     cost_value_ratio = target_cost / bundle_value
 

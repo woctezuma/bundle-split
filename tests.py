@@ -5,7 +5,7 @@ from src.soup_prices import extract_metadata_for_all_prices, extract_price_items
 
 
 class TestSoupUtilsMethods(TestCase):
-    def test_price_of_unreleased_product(self):
+    def test_price_of_unreleased_product(self) -> None:
         # This tests what happens when prices are marked as "Unavailable".
         # Reference: https://gg.deals/game/hollow-knight-silksong/
         href = "/game/hollow-knight-silksong/"

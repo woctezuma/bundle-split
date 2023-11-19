@@ -3,7 +3,7 @@ from src.fetch_utils import fetch_bundle_page_with_given_slug
 from src.soup_tiers import extract_prices_for_all_tiers, extract_tier_items
 
 
-def fetch_tiers(bundle_slug, page_soup=None):
+def fetch_tiers(bundle_slug: str, page_soup=None) -> list[float]:
     if page_soup is None:
         page_soup = fetch_bundle_page_with_given_slug(bundle_slug)
 
@@ -15,17 +15,17 @@ def fetch_tiers(bundle_slug, page_soup=None):
     return tier_prices
 
 
-def compute_target_cost(tier_prices):
+def compute_target_cost(tier_prices: list[float]) -> float:
     return max(tier_prices)
 
 
-def fetch_target_cost(bundle_slug, page_soup=None):
+def fetch_target_cost(bundle_slug: str, page_soup=None) -> float:
     tier_prices = fetch_tiers(bundle_slug, page_soup=page_soup)
 
     return compute_target_cost(tier_prices)
 
 
-def load_target_cost(bundle_slug):
+def load_target_cost(bundle_slug: str) -> float:
     try:
         tier_prices = load_tiers_from_disk(bundle_slug)
     except FileNotFoundError:

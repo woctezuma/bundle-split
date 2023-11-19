@@ -3,7 +3,7 @@ from src.fetch_utils import fetch_product_page_with_given_href
 from src.soup_prices import extract_metadata_for_all_prices, extract_price_items
 
 
-def main(bundle_slug) -> bool:
+def main(bundle_slug: str) -> bool:
     bundle_metadata = load_bundle_from_disk(bundle_slug)
 
     price_metadata = {}
