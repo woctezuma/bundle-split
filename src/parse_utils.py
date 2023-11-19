@@ -17,7 +17,7 @@ def fix_decimal_convention(price_text: str) -> str:
     return price_text.replace(",", ".")
 
 
-def convert_to_float(price_text: str) -> float | None:
+def convert_to_float(price_text: str) -> float:
     try:
         price = float(price_text)
     except ValueError:
@@ -26,13 +26,13 @@ def convert_to_float(price_text: str) -> float | None:
     return price
 
 
-def parse_price(price_text: str) -> float | None:
+def parse_price(price_text: str) -> float:
     price_text = strip_price_text(price_text)
     price_text = fix_decimal_convention(price_text)
     return convert_to_float(price_text)
 
 
-def parse_price_from_soup(price_soup) -> float | None:
+def parse_price_from_soup(price_soup) -> float:
     price_text = price_soup.text
     return parse_price(price_text)
 

@@ -8,7 +8,7 @@ def extract_price_header(page_soup) -> list[str]:
     return extract_soup_items(page_soup, target_div=target_div, verbose=False)
 
 
-def extract_price_items_from_header(price_header: list) -> list[dict[str, list]]:
+def extract_price_items_from_header(price_header: list) -> list:
     target_div = "game-info-price-col"
     price_items = []
 
@@ -18,7 +18,7 @@ def extract_price_items_from_header(price_header: list) -> list[dict[str, list]]
     return price_items
 
 
-def extract_price_items(page_soup, verbose: bool = False) -> list[dict[str, list]]:
+def extract_price_items(page_soup, verbose: bool = False) -> list:
     price_header = extract_price_header(page_soup)
     price_items = extract_price_items_from_header(price_header)
     price_items = filter_price_items(price_items)
@@ -30,7 +30,7 @@ def extract_price_items(page_soup, verbose: bool = False) -> list[dict[str, list
     return price_items
 
 
-def extract_metadata_for_given_price(price_soup) -> dict[str, float | None]:
+def extract_metadata_for_given_price(price_soup) -> dict[str, float]:
     price = parse_price_from_soup(price_soup)
 
     if price is not None:
@@ -42,7 +42,7 @@ def extract_metadata_for_given_price(price_soup) -> dict[str, float | None]:
     return price_metadata
 
 
-def extract_metadata_for_all_prices(price_items: list) -> dict[str, float | None]:
+def extract_metadata_for_all_prices(price_items: list) -> dict[str, float]:
     metadata = {}
 
     for price_soup in price_items:

@@ -13,7 +13,9 @@ def extract_game_items(page_soup, verbose: bool = True) -> list[str]:
     return game_items
 
 
-def extract_metadata_for_given_game(game_soup) -> dict[str, dict[str, str]]:
+def extract_metadata_for_given_game(
+    game_soup,
+) -> dict[str | None, dict[str, str | None]]:
     target_div = "game-info-title-wrapper"
     info_items = extract_soup_items(game_soup, target_div=target_div, verbose=False)
 
@@ -24,7 +26,9 @@ def extract_metadata_for_given_game(game_soup) -> dict[str, dict[str, str]]:
     return {slug: {"title": title, "href": href}}
 
 
-def extract_metadata_for_all_games(game_items: list) -> dict[str, dict[str, str]]:
+def extract_metadata_for_all_games(
+    game_items: list,
+) -> dict[str | None, dict[str, str | None]]:
     metadata = {}
 
     for game_soup in game_items:

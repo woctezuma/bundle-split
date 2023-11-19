@@ -53,7 +53,7 @@ def split_bundle_cost(
         total = get_bundle_value(ask_prices)
         print(f"Bundle value: {total:.2f} {get_currency_symbol()}")
 
-    split_prices = {}
+    split_prices: dict[str, float] = {}
 
     for slug, ask in ask_prices.items():
         split_price = ask * cost_value_ratio

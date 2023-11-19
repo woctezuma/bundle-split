@@ -34,7 +34,10 @@ def load_bundle_from_disk(bundle_slug: str) -> dict[str, dict[str, str]]:
     return load_json_as_dict(fname)
 
 
-def save_bundle_to_disk(data: dict[str, dict[str, str]], bundle_slug: str) -> None:
+def save_bundle_to_disk(
+    data: dict[str | None, dict[str, str | None]],
+    bundle_slug: str,
+) -> None:
     fname = get_bundle_fname(bundle_slug)
 
     # Overwrite previous data

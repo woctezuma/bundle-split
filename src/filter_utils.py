@@ -1,4 +1,4 @@
-def get_class(elem: dict[str, list]) -> list:
+def get_class(elem: dict) -> list[str]:
     try:
         cl = elem["class"]
     except KeyError:
@@ -42,6 +42,6 @@ def filter_content(data: list[str]) -> list[str]:
     return filtered_data
 
 
-def filter_price_items(price_items: list[dict[str, list]]) -> list[dict[str, list]]:
+def filter_price_items(price_items: list) -> list:
     target_class = "game-price-anchor-link"
     return [elem for elem in price_items if target_class in get_class(elem)]
