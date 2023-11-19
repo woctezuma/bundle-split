@@ -21,7 +21,7 @@ def convert_to_float(price_text: str) -> float | None:
     try:
         price = float(price_text)
     except ValueError:
-        price = None
+        price = 0
 
     return price
 
