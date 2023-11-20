@@ -19,7 +19,7 @@ def extract_prices_for_given_tier(tier_soup) -> list[float]:
     info_items = extract_soup_items(tier_soup, target_div=target_div, verbose=False)
     tier_prices = [parse_price_from_soup(e) for e in info_items]
 
-    return [p for p in tier_prices if p is not None]
+    return [p for p in tier_prices if p > 0]
 
 
 def extract_prices_for_all_tiers(tier_items: list, verbose: bool = True) -> list[float]:

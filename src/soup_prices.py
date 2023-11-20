@@ -33,7 +33,7 @@ def extract_price_items(page_soup, verbose: bool = False) -> list:
 def extract_metadata_for_given_price(price_soup) -> dict[str, float]:
     price = parse_price_from_soup(price_soup)
 
-    if price is not None:
+    if price > 0:
         href = price_soup["href"]
         price_metadata = {href: price}
     else:
