@@ -9,7 +9,7 @@ repos:
       args: [
       --fix, --unsafe-fixes, --exit-non-zero-on-fix,
       --target-version, "py312", --select, "ALL",
-      --ignore, "ANN001,ANN101,ANN201,D,E501,FBT,S101,S113,T20",
+      --ignore, "ANN,D,E501,FBT,S101,S113,T20",
       ]
     - id: ruff-format
 
