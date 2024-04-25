@@ -20,6 +20,8 @@ def extract_metadata_for_given_game(
     info_items = extract_soup_items(game_soup, target_div=target_div, verbose=False)
 
     title = get_value_from_soups(info_items, "title")
+    if title is None:
+        title = get_value_from_soups(info_items, "data-title-auto-hide")
     href = get_value_from_soups(info_items, "href")
     slug = get_value_from_soups(info_items, "data-game-slug")
 
