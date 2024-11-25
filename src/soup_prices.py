@@ -1,9 +1,11 @@
+from bs4 import BeautifulSoup
+
 from src.filter_utils import filter_price_items
 from src.parse_utils import parse_price_from_soup
 from src.soup_utils import extract_soup_items
 
 
-def extract_price_header(page_soup) -> list[str]:
+def extract_price_header(page_soup: BeautifulSoup) -> list[str]:
     target_div = "game-header-current-prices"
     return extract_soup_items(page_soup, target_div=target_div, verbose=False)
 
@@ -18,7 +20,7 @@ def extract_price_items_from_header(price_header: list) -> list:
     return price_items
 
 
-def extract_price_items(page_soup, verbose: bool = False) -> list:
+def extract_price_items(page_soup: BeautifulSoup, *, verbose: bool = False) -> list:
     price_header = extract_price_header(page_soup)
     price_items = extract_price_items_from_header(price_header)
     price_items = filter_price_items(price_items)
@@ -30,7 +32,7 @@ def extract_price_items(page_soup, verbose: bool = False) -> list:
     return price_items
 
 
-def extract_metadata_for_given_price(price_soup) -> dict[str, float]:
+def extract_metadata_for_given_price(price_soup: BeautifulSoup) -> dict[str, float]:
     price = parse_price_from_soup(price_soup)
 
     if price > 0:

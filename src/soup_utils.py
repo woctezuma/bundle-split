@@ -1,14 +1,16 @@
+from bs4 import BeautifulSoup, Tag
+
 from src.filter_utils import get_class, get_content, get_id
 
 
 def extract_soup_items(
-    soup,
+    soup: BeautifulSoup,
     target_div: str,
+    *,
     verbose: bool = False,
-) -> list[str]:
+) -> list[Tag]:
     all_divs = soup.findAll("div")
-
-    items = []
+    items: list[Tag] = []
 
     for div_element in all_divs:
         div_classes = get_class(div_element)

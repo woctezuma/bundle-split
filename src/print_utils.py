@@ -37,7 +37,7 @@ def convert_price_for_spreadsheet(price: float) -> str:
 def export_ask_prices_for_spreadsheet(
     bundle_metadata: dict[str, dict[str, str]],
     prices: dict[str, float],
-):
+) -> None:
     cell_separator = "\t"
     currency = get_currency_symbol()
 

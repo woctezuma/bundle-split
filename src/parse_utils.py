@@ -1,5 +1,7 @@
 from contextlib import suppress
 
+from bs4 import Tag
+
 
 def get_currency_symbol() -> str:
     return "€"
@@ -32,7 +34,7 @@ def parse_price(price_text: str) -> float:
     return convert_to_float(price_text)
 
 
-def parse_price_from_soup(price_soup) -> float:
+def parse_price_from_soup(price_soup: Tag) -> float:
     price_text = price_soup.text
     return parse_price(price_text)
 
