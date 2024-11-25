@@ -44,6 +44,7 @@ def get_bundle_value(ask_prices: dict[str, float]) -> float:
 def split_bundle_cost(
     ask_prices: dict[str, float],
     target_cost: float,
+    *,
     verbose: bool = True,
 ) -> dict[str, float]:
     bundle_value = get_bundle_value(ask_prices)

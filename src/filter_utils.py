@@ -1,22 +1,15 @@
-def get_class(elem: dict) -> list[str]:
-    try:
-        cl = elem["class"]
-    except KeyError:
-        cl = []
+from bs4 import Tag
 
-    return cl
+
+def get_class(elem: dict) -> list[str]:
+    return elem.get("class", [])
 
 
 def get_id(elem: dict[str, str]) -> str:
-    try:
-        elem_id = elem["id"]
-    except KeyError:
-        elem_id = ""
-
-    return elem_id
+    return elem.get("id", "")
 
 
-def get_content(elem) -> list[str]:
+def get_content(elem: Tag) -> list[str]:
     content = elem.contents
     return filter_content(content)
 
@@ -31,15 +24,7 @@ def safe_strip(elem: str) -> str:
 
 
 def filter_content(data: list[str]) -> list[str]:
-    filtered_data = []
-
-    for elem in data:
-        stripped_elem = safe_strip(elem)
-
-        if stripped_elem:
-            filtered_data.append(stripped_elem)
-
-    return filtered_data
+    return [stripped for elem in data if (stripped := safe_strip(elem))]
 
 
 def filter_price_items(price_items: list) -> list:
