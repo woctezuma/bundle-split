@@ -26,8 +26,7 @@ def extract_price_items(page_soup: BeautifulSoup, *, verbose: bool = False) -> l
     price_items = filter_price_items(price_items)
 
     if verbose:
-        num_prices = len(price_items)
-        print(f"#prices = {num_prices}")
+        print(f"#prices = {len(price_items)}")
 
     return price_items
 
