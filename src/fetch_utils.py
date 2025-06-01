@@ -1,7 +1,5 @@
-import requests
 from bs4 import BeautifulSoup
-
-TIMEOUT_IN_SECONDS: int = 5
+from selenium import webdriver
 
 
 def get_domain_url() -> str:
@@ -25,10 +23,13 @@ def get_product_url(product_href: str) -> str:
 
 
 def fetch_html_page(url: str) -> BeautifulSoup:
-    r = requests.get(url, timeout=TIMEOUT_IN_SECONDS)
-    r.raise_for_status()
+    driver = webdriver.Edge()
 
-    return BeautifulSoup(r.content, features="html.parser")
+    try:
+        driver.get(url)
+        return BeautifulSoup(driver.page_source, features="html.parser")
+    finally:
+        driver.quit()
 
 
 def fetch_bundle_page_with_given_slug(bundle_slug: str) -> BeautifulSoup:
