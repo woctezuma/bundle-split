@@ -23,7 +23,10 @@ def get_product_url(product_href: str) -> str:
 
 
 def fetch_html_page(url: str) -> BeautifulSoup:
-    driver = webdriver.Edge()
+    options = webdriver.EdgeOptions()
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")  # Required for Windows
+    driver = webdriver.Edge(options=options)
 
     try:
         driver.get(url)
