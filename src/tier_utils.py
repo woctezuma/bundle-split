@@ -21,6 +21,9 @@ def fetch_tiers(
 
 
 def compute_target_cost(tier_prices: list[float]) -> float:
+    if not tier_prices:
+        msg = "There is no tier price data available."
+        raise ValueError(msg)
     return max(tier_prices)
 
 
