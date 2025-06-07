@@ -8,7 +8,7 @@ repos:
     - id: ruff
       args: [
       --fix, --unsafe-fixes, --exit-non-zero-on-fix,
-      --target-version, "py313", --select, "ALL",
+      --target-version, "py314", --select, "ALL",
       --ignore, "DOC,D,E501,S101,T201,CPY001,INP001",
       ]
     - id: ruff-format
@@ -24,5 +24,5 @@ repos:
     rev: v2.1.0
     hooks:
     - id: refurb
-      args: [--python-version, "3.12"]
+      args: [--python-version, "3.14"]
       stages: [manual]
