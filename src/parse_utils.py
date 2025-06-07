@@ -1,6 +1,8 @@
 from contextlib import suppress
+from typing import TYPE_CHECKING
 
-from bs4 import Tag
+if TYPE_CHECKING:
+    from bs4 import Tag
 
 
 def get_currency_symbol() -> str:

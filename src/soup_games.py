@@ -1,7 +1,10 @@
-from bs4 import BeautifulSoup, Tag
+from typing import TYPE_CHECKING
 
 from src.parse_utils import get_value_from_soups
 from src.soup_utils import extract_soup_items
+
+if TYPE_CHECKING:
+    from bs4 import BeautifulSoup, Tag
 
 
 def extract_game_items(

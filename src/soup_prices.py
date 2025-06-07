@@ -1,8 +1,11 @@
-from bs4 import BeautifulSoup
+from typing import TYPE_CHECKING
 
 from src.filter_utils import filter_price_items
 from src.parse_utils import parse_price_from_soup
 from src.soup_utils import extract_soup_items
+
+if TYPE_CHECKING:
+    from bs4 import BeautifulSoup
 
 
 def extract_price_header(page_soup: BeautifulSoup) -> list[str]:

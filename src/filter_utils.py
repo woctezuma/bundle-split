@@ -1,4 +1,7 @@
-from bs4 import Tag
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from bs4 import Tag
 
 
 def get_class(elem: dict) -> list[str]:
