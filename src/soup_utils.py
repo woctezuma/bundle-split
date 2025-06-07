@@ -1,9 +1,6 @@
-from typing import TYPE_CHECKING
+from bs4 import BeautifulSoup, Tag
 
 from src.filter_utils import get_class, get_content, get_id
-
-if TYPE_CHECKING:
-    from bs4 import BeautifulSoup, Tag
 
 
 def extract_soup_items(

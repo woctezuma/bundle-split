@@ -1,10 +1,7 @@
-from typing import TYPE_CHECKING
+from bs4 import BeautifulSoup
 
 from src.parse_utils import parse_price_from_soup
 from src.soup_utils import extract_soup_items
-
-if TYPE_CHECKING:
-    from bs4 import BeautifulSoup
 
 
 def extract_tier_items(page_soup: BeautifulSoup, *, verbose: bool = True) -> list[str]:

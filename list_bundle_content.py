@@ -1,12 +1,9 @@
-from typing import TYPE_CHECKING
+import cloudscraper
+from bs4 import BeautifulSoup
 
 from src.disk_utils import save_bundle_to_disk
 from src.fetch_utils import fetch_bundle_page_with_given_slug
 from src.soup_games import extract_game_items, extract_metadata_for_all_games
-
-if TYPE_CHECKING:
-    import cloudscraper
-    from bs4 import BeautifulSoup
 
 
 def main(

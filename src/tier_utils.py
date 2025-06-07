@@ -1,12 +1,9 @@
-from typing import TYPE_CHECKING
+import cloudscraper
+from bs4 import BeautifulSoup
 
 from src.disk_utils import load_tiers_from_disk, save_tiers_to_disk
 from src.fetch_utils import fetch_bundle_page_with_given_slug
 from src.soup_tiers import extract_prices_for_all_tiers, extract_tier_items
-
-if TYPE_CHECKING:
-    import cloudscraper
-    from bs4 import BeautifulSoup
 
 
 def fetch_tiers(
