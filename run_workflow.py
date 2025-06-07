@@ -1,5 +1,7 @@
 import argparse
 
+import cloudscraper
+
 import list_bundle_content
 import list_product_prices
 import split_bundle_cost
@@ -8,16 +10,25 @@ from src.tier_utils import fetch_target_cost
 from src.trim_utils import standardize_bundle_slug
 
 
-def main(bundle_slug: str, target_cost_in_euros: float | None = None) -> bool:
+def main(
+    bundle_slug: str,
+    target_cost_in_euros: float | None = None,
+) -> bool:
     bundle_slug = standardize_bundle_slug(bundle_slug)
 
-    page_soup = fetch_bundle_page_with_given_slug(bundle_slug)
+    scraper = cloudscraper.create_scraper()
+
+    page_soup = fetch_bundle_page_with_given_slug(bundle_slug, scraper=scraper)
 
     if target_cost_in_euros is None:
-        target_cost_in_euros = fetch_target_cost(bundle_slug, page_soup=page_soup)
+        target_cost_in_euros = fetch_target_cost(
+            bundle_slug,
+            page_soup=page_soup,
+            scraper=scraper,
+        )
 
-    list_bundle_content.main(bundle_slug, page_soup=page_soup)
-    list_product_prices.main(bundle_slug)
+    list_bundle_content.main(bundle_slug, page_soup=page_soup, scraper=scraper)
+    list_product_prices.main(bundle_slug, scraper=scraper)
     split_bundle_cost.main(bundle_slug, target_cost_in_euros)
 
     return True
