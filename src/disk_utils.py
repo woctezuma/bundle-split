@@ -7,12 +7,12 @@ from src.data_utils import get_bundle_fname, get_price_fname, get_tier_fname
 T = TypeVar("T", dict, list)
 
 
-def save_json(data: T, fname: str) -> None:
+def save_json[T: (dict, list)](data: T, fname: str) -> None:
     with Path(fname).open("w", encoding="utf-8") as f:
         json.dump(data, f)
 
 
-def load_json(fname: str, default_factory: type[T]) -> T:
+def load_json[T: (dict, list)](fname: str, default_factory: type[T]) -> T:
     try:
         with Path(fname).open(encoding="utf-8") as f:
             data = json.load(f)
