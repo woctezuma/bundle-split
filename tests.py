@@ -8,8 +8,8 @@ class TestSoupUtilsMethods(TestCase):
     @staticmethod
     def test_price_of_unreleased_product() -> None:
         # This tests what happens when prices are marked as "Unavailable".
-        # Reference: https://gg.deals/game/hollow-knight-silksong/
-        href = "/game/hollow-knight-silksong/"
+        # Reference: https://gg.deals/game/in-the-valley-of-gods/
+        href = "/game/in-the-valley-of-gods/"
         page_soup = fetch_product_page_with_given_href(product_href=href)
 
         price_items = extract_price_items(page_soup=page_soup)
