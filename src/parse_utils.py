@@ -35,7 +35,7 @@ def parse_price(price_text: str) -> float:
 
 
 def parse_price_from_soup(price_soup: Tag) -> float:
-    price_text = price_soup.text
+    price_text = price_soup.get_text(strip=True)
     return parse_price(price_text)
 
 
