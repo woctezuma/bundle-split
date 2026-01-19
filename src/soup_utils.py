@@ -9,7 +9,7 @@ def extract_soup_items(
     *,
     verbose: bool = False,
 ) -> list[Tag]:
-    all_divs = soup.findAll("div")
+    all_divs = soup.find_all("div")
     items: list[Tag] = []
 
     for div_element in all_divs:
